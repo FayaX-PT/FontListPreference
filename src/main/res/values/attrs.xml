@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="path" format="string"/>
+    <attr name="defaultValue" format="string"/>
+    <attr name="includeSystemFonts" format="boolean"/>
+    
+    <declare-styleable name="FontPreferenceListPicker">
+        <attr name="path"/>
+        <attr name="defaultValue"/>
+        <attr name="includeSystemFonts"/>
+    </declare-styleable>
+</resources>

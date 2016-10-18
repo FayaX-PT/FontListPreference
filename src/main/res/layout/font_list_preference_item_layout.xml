@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_list_preferences_relative_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="8dip">
+
+    <TableLayout
+        android:id="@+id/custom_list_view_row_table_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:id="@+id/custom_list_view_row_table_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/custom_list_view_row_radio_button"
+                android:layout_weight=".1"
+                android:layout_width="0dip"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:id="@+id/custom_list_view_row_text_view"
+                android:layout_weight=".9"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/custom_list_view_row_radio_button"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:textSize="19sp"
+                android:focusable="false"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
